@@ -1,4 +1,57 @@
 Настоятельно рекомендую задуматься над тем чтобы иметь свой сервер. 
+был проведен эксперимент: сюда выкладывались ip для общего пользования - всё заблочено. один отдельный ip отдан одному отдельному человеку - не заблочено. 
+
+чтобы иметь свой сервер надо: 
+аккаунт на amazon https://lightsail.aws.amazon.com/ 
+
+создать свой instance. я выбираю Японию или Сингапур. систему ставлю centos7 
+
+подсоеняюсь нажимая на кнопку connect using ssh или прям на значек >_ который будет справа от названия сервера
+
+после присоединения ввожу команды одну за другой 
+
+yum -y install epel-release    
+
+yum -y install nano wget curl 
+
+sudo yum check-update
+
+sudo yum update
+
+следущую длиинную команду ввести 3 раза. выбирать 2,7,10. сервер будет спрашивать перезагружиться, разрешаем
+wget -N --no-check-certificate https://raw.githubusercontent.com/Benisuzume/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+
+
+в этой комманде которя состоит из нескольких строчек вы сами выбираете себе пароль, порт 443, далее 2,4,7 и нажимаете enter
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh && chmod +x shadowsocksR.sh
+./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
+
+
+в итоге вы получаете окно где написаны все ваши настройки и вводите их в телефон. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Всем привет! 
 Напоминаю, я этим занимаюсь в свободное от работы время. Так же напоминаю, что сейчас нет никаких гарантий что будет работать стабильно как раньше. Напоминаю, что мне заблокировали аккаунт где было много серверов и я жду что бы его мне вернули (с компанией что предоставляет сервера связался, необходимые для разблокировки документы подал).
@@ -13,9 +66,9 @@ The more people use the same server, the faster it will be blocked.
 If you own a server and would like to contribute to the community please contact me. 
 Also I have make it clear, I'm not doing any magic, I'm not providing servers, I'm not a registered company proving VPN services etc, and I would not be appreciated to be recommended to someone as the magician doing all this. Hope for your understanding.
 
-3.112.13.144
+52.197.132.229
 
-29-09 9pm
+29-09 10pm
 
 
 
