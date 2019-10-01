@@ -1,6 +1,23 @@
-Как бы смешно это ни звучало, но я на испытательном сроке у Амазон и мне разрешено иметь только 4 сервера:
+https://www.youtube.com/watch?v=fsi5ZB5KPqI
 
-чтобы немного снять нагрузку с серверов, скачайте приложение с сайта https://1.1.1.1/ как альтернатива, которая работает.
+инструкция как сделать сервер на Амазон или любом другом vps сервере
+
+sudo passwd root
+
+su - 
+
+yum -y install epel-release 
+yum -y install nano wget
+sudo yum check-update
+
+sudo yum update
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/Benisuzume/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh && chmod +x shadowsocksR.sh
+
+./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
+
 
 JPA 13.231.124.58
 JPB 13.230.208.32
