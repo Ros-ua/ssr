@@ -2,9 +2,9 @@ https://www.youtube.com/watch?v=fsi5ZB5KPqI
 
 инструкция как сделать сервер на Амазон или любом другом vps сервере
 
-sudo passwd root
+sudo passwd root (we give password for root user) 
 
-su - 
+su - ( enter as root user each time after reload) 
 
 yum -y install epel-release 
 yum -y install nano wget
@@ -12,11 +12,15 @@ sudo yum check-update
 
 sudo yum update
 
+( next we need options 2,7,10 so put it 3 times) 
 wget -N --no-check-certificate https://raw.githubusercontent.com/Benisuzume/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
 
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh && chmod +x shadowsocksR.sh
 
+(next we need 2,4,7)
 ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
+
+
 
 
 JPA 13.231.124.58
