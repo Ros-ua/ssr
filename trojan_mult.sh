@@ -110,7 +110,7 @@ EOF
     "remote_addr": "$your_domain",
     "remote_port": 443,
     "password": [
-        "$trojan_passwd"
+        "1qaz2wsx"
     ],
     "log_level": 1,
     "ssl": {
