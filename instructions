@@ -1,0 +1,1 @@
+curl -O https://raw.githubusercontent.com/Ros-ua/ssr/master/install.sh && chmod +x install.sh && ./install.sh
