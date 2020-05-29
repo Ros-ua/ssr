@@ -1,3 +1,8 @@
 curl -O https://raw.githubusercontent.com/Ros-ua/ssr/master/install_yum.sh && chmod +x install_yum.sh && ./install_yum.sh
 curl -O https://raw.githubusercontent.com/Ros-ua/ssr/master/install_apt.sh && chmod +x install_apt.sh && ./install_apt.sh
+
 wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/master/vpstest.sh && bash vpstest.sh
+
+centos7 
+sudo bash -c "$(curl -fsSL https://git.io/JfrKq)"
+source <(curl -sL https://git.io/JfrKq)
