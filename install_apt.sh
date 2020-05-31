@@ -8,6 +8,5 @@ sudo systemctl restart sshd && fail2ban-client status ssh-iptables
 curl -O https://raw.githubusercontent.com/Ros-ua/ssr/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
 nano /usr/src/trojan/server.conf
 systemctl restart trojan
-bash <(curl -sL https://python3.netlify.app/install.sh)
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
