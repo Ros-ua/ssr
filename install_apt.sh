@@ -2,7 +2,7 @@ echo 'deb http://deb.debian.org/debian stretch-backports main' > \
  /etc/apt/sources.list.d/backports.list
 apt-get update && sudo apt-get install cockpit -y
 sudo passwd root
-apt-get update &&  apt-get upgrade -y && apt-get install wget ufw nano sudo curl -y
+apt-get update &&  apt-get upgrade -y && apt-get install wget dnsutils ufw nano sudo curl -y
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
 sudo systemctl restart sshd && fail2ban-client status ssh-iptables
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
