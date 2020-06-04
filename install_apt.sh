@@ -7,3 +7,4 @@ wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh 
 sudo systemctl restart sshd && fail2ban-client status ssh-iptables
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+curl -sO https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh && sudo bash vps.sh
