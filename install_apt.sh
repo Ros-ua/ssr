@@ -1,6 +1,3 @@
-echo 'deb http://deb.debian.org/debian stretch-backports main' > \
- /etc/apt/sources.list.d/backports.list
-apt update && apt install cockpit -y
 sudo passwd root
 apt update && apt dist-upgrade -y && apt install wget ufw nano sudo curl -y
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
