@@ -1,6 +1,5 @@
 curl -O https://raw.githubusercontent.com/Ros-ua/ssr/master/install_yum.sh && chmod +x install_yum.sh && ./install_yum.sh
 
 apt update && apt install sudo curl -y && curl -O https://raw.githubusercontent.com/Ros-ua/ssr/master/install_apt.sh && chmod +x install_apt.sh && ./install_apt.sh
-curl -sO https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh && sudo bash vps.sh
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/master/vpstest.sh && bash vpstest.sh
