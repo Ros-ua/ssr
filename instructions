@@ -5,7 +5,6 @@ apt update && apt install sudo curl -y && curl -O https://raw.githubusercontent.
 wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/master/vpstest.sh && bash vpstest.sh
 
 cd /usr/share/nginx/html
-touch trojan.html
 nano trojan.html
-touch v2ray.html
 nano v2ray.html
+systemctl restart nginx
