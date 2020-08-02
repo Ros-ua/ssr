@@ -7,3 +7,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/ma
 cd /usr/share/nginx/html
 nano servers.html
 systemctl restart nginx
+
+
+https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh
