@@ -1,11 +1,3 @@
-sudo yum install cockpit firewalld -y
-sudo systemctl start firewalld
-sudo systemctl enable firewalld 
-sudo systemctl enable --now cockpit.socket
-sudo systemctl status firewalld
-sudo firewall-cmd --permanent --zone=public --add-service=cockpit
-sudo firewall-cmd --reload
-sudo passwd root
 yum update -y && yum install wget ufw nano sudo curl -y
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
 sudo systemctl restart sshd && fail2ban-client status ssh-iptables
