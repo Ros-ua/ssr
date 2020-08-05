@@ -34,6 +34,7 @@ systemctl restart trojan
 echo "Sleeping for 5 seconds…"
 sleep 5
 echo "Completed"
+systemctl enable nginx
 systemctl restart nginx
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 echo "Sleeping for 5 seconds…"
