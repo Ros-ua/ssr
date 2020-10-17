@@ -1,5 +1,4 @@
 yum update -y && yum install wget ufw nano sudo curl -y
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
 sudo systemctl restart sshd && fail2ban-client status ssh-iptables
