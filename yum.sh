@@ -3,6 +3,4 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-N
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
 sudo systemctl restart sshd && fail2ban-client status ssh-iptables
 curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
-systemctl restart trojan
-systemctl enable nginx
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
