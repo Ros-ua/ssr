@@ -10,3 +10,5 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh)
 apt-get update && apt-get install sudo curl -y && curl -Ss https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh | sudo bash
 
 curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+
+https://www.v2rayssr.com/x-ui.html
