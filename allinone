@@ -11,4 +11,4 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-N
 
 wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/Xray_onekey/main/install.sh" && chmod +x install.sh && bash install.sh
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
-apt-get update && apt-get install sudo curl -y && curl -Ss https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh | sudo bash
+apt-get update --fix-missing && apt-get upgrade -y && apt-get install sudo curl -y && curl -Ss https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh | sudo bash
