@@ -2,6 +2,12 @@ apt update -y && apt dist-upgrade -y && sudo apt install wget ufw nano ca-certif
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
 curl -O https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/shell/install_en.sh" && chmod 700 /root/install_en.sh && mv /root/install_en.sh /root/install.sh && /root/install.sh
+
+uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5
+path: pokocat
+/pokocatvws?ed=2048
+
+
 apt -o Acquire::AllowInsecureRepositories=true -o Acquire::AllowDowngradeToInsecureRepositories=true update && apt-get install sudo curl screen -y && curl -LO https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh && sudo screen -U bash vps.sh
 
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
@@ -14,4 +20,3 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh
 
-apt-get update --fix-missing && apt-get upgrade -y && apt-get install sudo curl -y && curl -Ss https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh | sudo bash
