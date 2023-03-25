@@ -8,6 +8,8 @@ bash <(curl -Lso- https://git.io/oneclick)
 curl -s https://raw.githubusercontent.com/VZiChoushaDui/Libertea/master/bootstrap.sh -o /tmp/bootstrap.sh && bash /tmp/bootstrap.sh install
 curl -s https://raw.githubusercontent.com/VZiChoushaDui/Libertea/master/bootstrap.sh -o /tmp/bootstrap.sh && bash /tmp/bootstrap.sh update
 
+bash -c "$(wget -qO- https://s.id/xraysc)"
+
 
 
 
