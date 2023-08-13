@@ -11,7 +11,7 @@ curl -s https://raw.githubusercontent.com/VZiChoushaDui/Libertea/master/bootstra
 bash -c "$(wget -qO- https://s.id/xraysc)"
 
 
-
+bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)
 
 
 curl -O https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
