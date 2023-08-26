@@ -28,6 +28,11 @@ path: pokocat
 
 
 
+wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh
+curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh
+
+
+
 - {name: grpc, server: 1.letitbe.ink, port: 443, type: trojan, password: 85ae7f27-6f2a-4665-ac8d-2d224b146aa0, network: grpc, sni: 1.letitbe.ink, skip-cert-verify: true, udp: true, grpc-opts: {grpc-service-name: "trojan-grpc"}}
 - {name: ws, server: 1.letitbe.ink, password: a8042d9cd2, port: 443, type: trojan, network: ws, sni: 1.letitbe.ink, ws-opts: {path: /050fb668, headers: {Host: 1.letitbe.ink}}}
 - {name: stanrart, server: 2.duckdns.org, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 2.duckdns.org}
