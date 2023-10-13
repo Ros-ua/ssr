@@ -1,51 +1,35 @@
 apt update -y && apt dist-upgrade -y && apt install wget vnstat ufw nano unzip curl ca-certificates -y
 yum update -y && yum install wget ufw nano sudo vnstat unzip curl -y
 
-
 vnstat -d
-
 
 wget https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
 
 bash <(curl -Lso- https://git.io/oneclick)
 bash <(curl -Lso- https://git.io/kernel.sh)
 
+wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
 curl -s https://raw.githubusercontent.com/VZiChoushaDui/Libertea/master/bootstrap.sh -o /tmp/bootstrap.sh && bash /tmp/bootstrap.sh install
 curl -s https://raw.githubusercontent.com/VZiChoushaDui/Libertea/master/bootstrap.sh -o /tmp/bootstrap.sh && bash /tmp/bootstrap.sh update
 
 bash -c "$(wget -qO- https://s.id/xraysc)"
-
-
 bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)
-
-
 curl -O https://raw.githubusercontent.com/jinwyp/one_click_script/master/trojan_v2ray_install.sh && chmod +x ./trojan_v2ray_install.sh && ./trojan_v2ray_install.sh
-
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-
 apt -o Acquire::AllowInsecureRepositories=true -o Acquire::AllowDowngradeToInsecureRepositories=true update && apt-get install sudo curl screen -y && curl -LO https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/vps.sh && sudo screen -U bash vps.sh
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/Xray_onekey/main/install.sh" && chmod +x install.sh && bash install.sh
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh
 
+curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -cns
+bash <(curl -Lso- st.343.re/cn)
+
 uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5
 path: pokocat
 /pokocatvws?ed=2048
-
-
-
-wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh
-curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh
-
-
 
 - {name: grpc, server: 1.letitbe.ink, port: 443, type: trojan, password: 85ae7f27-6f2a-4665-ac8d-2d224b146aa0, network: grpc, sni: 1.letitbe.ink, skip-cert-verify: true, udp: true, grpc-opts: {grpc-service-name: "trojan-grpc"}}
 - {name: ws, server: 1.letitbe.ink, password: a8042d9cd2, port: 443, type: trojan, network: ws, sni: 1.letitbe.ink, ws-opts: {path: /050fb668, headers: {Host: 1.letitbe.ink}}}
 - {name: stanrart, server: 2.duckdns.org, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 2.duckdns.org}
 - { name: libertea, type: trojan, password: 930e8778b93b73cf37c588a36ada74dab24be2a1e9dfcacb361df4d302059cbd, port: 443, server: 1.letitbe.ink, network: ws, sni: 1.letitbe.ink, skip-cert-verify: false, udp: true, ws-opts: {path: "/4820d965-7481-42fa-9222-dad2103834b4/49c34154de85ec2fb7bd1951e1921acf", headers: {Host: 1.letitbe.ink}}}
-
-
-speed test
-https://github.com/i-abc/Speedtest
-https://github.com/spiritLHLS/ecsspeed
