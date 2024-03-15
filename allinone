@@ -26,8 +26,7 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh
 
-curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -cns
-bash <(curl -Lso- st.343.re/cn)
+curl -sL bench.monster | bash -s -- -cns
 
 uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5
 path: pokocat
